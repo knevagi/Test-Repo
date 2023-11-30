@@ -88,6 +88,10 @@ namespace NotificationModule
                     {
 
                     }
+                    else
+                    {
+                        WriteToFile("\n There is a missing Location Field for user " + doc.Id);
+                    }
                 }
             }
             catch (Exception e)
